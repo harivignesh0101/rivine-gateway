@@ -59,7 +59,7 @@ export default function Dashboard() {
                 {loading ? (
                     <p>Loading...</p>
                 ) : (
-                    <DataTable columns={columns} data={data} />
+                    <DataTable columns={columns} data={data}/>
                 )}
             </div>
         </>

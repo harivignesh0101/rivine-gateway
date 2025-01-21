@@ -4,6 +4,22 @@ import Instance from '@models/instance.model';
 import { connect } from '@lib/db';
 import { auth } from "@clerk/nextjs/server"
 
+
+export async function getInstance(instanceId: string) {
+    try {
+        await connect();
+        const { orgId, userId } = await auth();
+        console.log(orgId, userId)
+        const query = { orgId: orgId ? orgId : userId, _id: instanceId };
+        const ff = await Instance.findOne(query, 'config status name createdAt updatedAt provider -_id');
+        console.log(ff)
+        return JSON.parse(JSON.stringify(ff));
+    } catch (error) {
+        console.error("Error fetching instances:", error);
+        throw new Error("Failed to fetch instances");
+    }
+}
+
 /**
  * Get instances based on organization ID or user ID.
  * @returns Array of instance documents.

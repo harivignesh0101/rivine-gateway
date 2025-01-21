@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import {OrganizationSwitcher, UserButton} from "@clerk/nextjs";
+import {OrganizationSwitcher} from "@clerk/nextjs";
 import { useTheme } from "next-themes"
 import { dark } from "@clerk/themes";
 
