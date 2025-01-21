@@ -1,17 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { 
-  BarChart3, 
-  Inbox, 
-  LayoutDashboard, 
-  Search,
-  Bell,
-  Users,
-  FolderKanban,
-  CheckCircle2,
-  Target
-} from "lucide-react"
 import Image from 'next/image'
 import Link from 'next/link'
 import { ModeToggle } from "../ui/mode-toggle"
