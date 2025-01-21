@@ -75,7 +75,8 @@ const LandingPage = () => {
       </div>
 
       {/* Dashboard Preview */}
-      <footer className="bg-white">
+      <footer>
+        <hr></hr>
         <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
@@ -93,7 +94,7 @@ const LandingPage = () => {
                 </span>
             </div>
 
-              <p className="mt-4 max-w-xs text-gray-500">
+              <p className="mt-4 max-w-xs">
                 Created by <Link href={'https://harivignesh.com'}>Harivignesh</Link>
               </p>
 
@@ -176,7 +177,7 @@ const LandingPage = () => {
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
               <div>
-                <p className="font-medium text-gray-900">Gateways</p>
+                <p className="font-medium text-gray-700">Gateways</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -198,7 +199,7 @@ const LandingPage = () => {
               </div>
 
               <div>
-                <p className="font-medium text-gray-900">Company</p>
+                <p className="font-medium text-gray-700">Company</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -208,7 +209,7 @@ const LandingPage = () => {
               </div>
 
               <div>
-                <p className="font-medium text-gray-900">Helpful Links</p>
+                <p className="font-medium text-gray-700">Helpful Links</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -222,7 +223,7 @@ const LandingPage = () => {
               </div>
 
               <div>
-                <p className="font-medium text-gray-900">Legal</p>
+                <p className="font-medium text-gray-700">Legal</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -241,7 +242,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <p className="text-xs text-gray-500">&copy; 2022. Company Name. All rights reserved.</p>
+          <p className="text-xs text-gray-500">&copy; 2025. Rivine. All rights reserved.</p>
         </div>
       </footer>
     </div>
