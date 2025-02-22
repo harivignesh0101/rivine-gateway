@@ -8,10 +8,10 @@ import { dark } from "@clerk/themes";
 
 
 export function UserButtonComponent() {
-    const { theme } = useTheme()
+    const { resolvedTheme } = useTheme()
     return(
         <UserButton appearance={{
-            baseTheme: theme === "dark" ? dark : undefined,
+            baseTheme: resolvedTheme === "dark" ? dark : undefined,
         }} />
     )
 }

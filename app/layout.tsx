@@ -25,6 +25,8 @@ export const metadata: Metadata = {
   description: "Seamlessly orchestrate and manage multiple API gateways across platforms with a federated architecture designed for flexibility and scalability",
 };
 
+const HEADER_HEIGHT = "4rem";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,7 +37,12 @@ export default function RootLayout({
       <ClerkProvider>
         <html lang="en">
           <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+              className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden`}
+              style={
+                {
+                  "--header-height": HEADER_HEIGHT,
+                } as React.CSSProperties
+              }
           >
           <ClerkLoaded>
             <ThemeProvider

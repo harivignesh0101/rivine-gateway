@@ -11,6 +11,7 @@ import {ModeToggle} from "@components/ui/mode-toggle";
 import React from "react";
 import {OrganizationSwitcherComponent} from "@components/custom/organization-switcher";
 import {UserButtonComponent} from "@components/custom/user-button-component";
+import {ProjectSwitcher} from "@components/custom/project-switcher";
 
 export function AppSidebar() {
     const items = [
@@ -35,8 +36,10 @@ export function AppSidebar() {
                             <span>
                                 <OrganizationSwitcherComponent />
                             </span>
+                            <span>
+                                <ProjectSwitcher/>
+                            </span>
                         </div>
-                        <ModeToggle></ModeToggle>
                     </div>
 
                 </SidebarHeader>
@@ -58,6 +61,9 @@ export function AppSidebar() {
                 </SidebarGroup>
             </SidebarContent>
             <SidebarFooter>
+                <div className="flex justify-center">
+                    <ModeToggle></ModeToggle>
+                </div>
                 <div className="flex justify-center">
                     <UserButtonComponent></UserButtonComponent>
                 </div>

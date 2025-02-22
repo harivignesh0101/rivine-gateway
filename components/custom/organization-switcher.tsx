@@ -8,10 +8,10 @@ import { dark } from "@clerk/themes";
 
 
 export function OrganizationSwitcherComponent() {
-    const { theme } = useTheme()
+    const { resolvedTheme } = useTheme()
     return(
         <OrganizationSwitcher appearance={{
-            baseTheme: theme === "dark" ? dark : undefined,
+            baseTheme: resolvedTheme === "dark" ? dark : undefined,
         }} />
     )
 }

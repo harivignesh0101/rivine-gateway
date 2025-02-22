@@ -4,8 +4,8 @@ import { useTheme } from "next-themes"
 import { dark } from "@clerk/themes";
 
 export default function Page() {
-    const { theme } = useTheme()
+    const { resolvedTheme } = useTheme()
     return <SignUp appearance={{
-                    baseTheme: theme === "dark" ? dark : undefined,
+                    baseTheme: resolvedTheme === "dark" ? dark : undefined,
                 }}/>
 }
