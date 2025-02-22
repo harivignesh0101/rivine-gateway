@@ -36,9 +36,6 @@ export function AppSidebar() {
                             <span>
                                 <OrganizationSwitcherComponent />
                             </span>
-                            <span>
-                                <ProjectSwitcher/>
-                            </span>
                         </div>
                     </div>
 

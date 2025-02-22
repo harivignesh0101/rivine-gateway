@@ -15,8 +15,8 @@ import {ServerCog, Users} from "lucide-react";
 import Link from "next/link";
 import {ProjectSwitcher} from "@components/custom/project-switcher";
 
-const data = {
-    versions: ["1.0.1", "1.1.0-alpha", "2.0.0-beta1"],
+const projectsData = {
+    projects: ["project1", "project2", "project3"],
 };
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
@@ -37,8 +37,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <Sidebar className="top-[--header-height]" variant="sidebar" {...props} collapsible="icon">
             <SidebarHeader>
                 <ProjectSwitcher
-                    versions={data.versions}
-                    defaultVersion={data.versions[0]}
+                    versions={projectsData.projects}
+                    defaultVersion={projectsData.projects[0]}
                 />
             </SidebarHeader>
             <SidebarContent>
